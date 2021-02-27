@@ -1,0 +1,14 @@
+.image_Dash{
+    width:400px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

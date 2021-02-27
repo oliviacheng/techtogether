@@ -1,0 +1,39 @@
+<div class="container">
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<link href="../assets/style.css" rel="stylesheet" type="text/css">
+
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<div class="main container">
+<img src="../assets/CoffeeDoddle.png" class="image_Dash" alt="CoffeeDoodle"/>
+<div>
+<h1>Please enter your food preferences</h1>
+<form action="" method="POST">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="name"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Enter Name"
+        value="<%= typeof name != 'undefined' ? name : '' %>"
+      />
+    </div>
+    <div class="form-group">
+       
+            <label for="Food Preference">What is your favourite Food</label>
+            <div class="options" name="typeoffood" id="fooditems">
+                <span class="badge rounded-pill bg-primary ">Vegetarian</span>
+                <span class="badge rounded-pill bg-primary ">Non-Vegetarian</span>
+                <span class="badge rounded-pill bg-primary ">Vegan</span>
+                <span class="badge rounded-pill bg-primary">No-Preferences</span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">
+      Submit
+    </button>
+  </form>
+</div>
+</div>
+</div>
